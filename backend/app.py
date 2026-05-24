@@ -17,6 +17,7 @@ from dotenv import load_dotenv
 from routes.docs import docs_bp
 from routes.query import query_bp
 from routes.trigger import trigger_bp
+from routes.webhook import webhook_bp
 
 # ---------------------------------------------------------------------------
 # Environment & App Initialization
@@ -39,6 +40,7 @@ CORS(app)
 app.register_blueprint(docs_bp)
 app.register_blueprint(query_bp)
 app.register_blueprint(trigger_bp)
+app.register_blueprint(webhook_bp)
 
 
 # ---------------------------------------------------------------------------

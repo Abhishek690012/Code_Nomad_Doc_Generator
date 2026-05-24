@@ -1,5 +1,25 @@
-# Python dependencies for Codewise backend
-Flask==3.0.3
-Flask-Cors==4.0.1
-python-dotenv==1.0.1
-requests==2.32.3
+# ─────────────────────────────────────────────────────────────
+# Codewise Backend — Python Dependencies
+# ─────────────────────────────────────────────────────────────
+
+# Web framework & middleware
+flask
+flask-cors
+
+# HTTP client (GitHub API calls)
+requests
+
+# Environment variable management
+python-dotenv
+
+# AI / LLM — Groq client for Llama 3.3 inference
+groq
+
+# Embeddings — Sentence Transformers (all-MiniLM-L6-v2)
+sentence-transformers
+
+# Vector search — FAISS (CPU build)
+faiss-cpu
+
+# Numerical computing
+numpy
