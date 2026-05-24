@@ -1,9 +1,25 @@
-# Python dependencies for Codewise backend
+# ─────────────────────────────────────────────────────────────
+# Codewise Backend — Python Dependencies
+# ─────────────────────────────────────────────────────────────
+
+# Web framework & middleware
 flask
 flask-cors
+
+# HTTP client (GitHub API calls)
 requests
+
+# Environment variable management
 python-dotenv
-sentence-transformers
-faiss-cpu
+
+# AI / LLM — Groq client for Llama 3.3 inference
 groq
+
+# Embeddings — Sentence Transformers (all-MiniLM-L6-v2)
+sentence-transformers
+
+# Vector search — FAISS (CPU build)
+faiss-cpu
+
+# Numerical computing
 numpy
