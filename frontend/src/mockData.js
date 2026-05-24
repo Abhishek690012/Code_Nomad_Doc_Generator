@@ -39,3 +39,12 @@ export const mockDocs = {
     ],
   },
 };
+
+export const mockQueryResponse = {
+  answer:
+    "The authentication is handled in the auth_middleware function using JWTs.",
+  source_file: "src/middleware.py",
+  function_name: "auth_middleware",
+  snippet:
+    "def auth_middleware(req):\n    token = req.headers.get('Authorization')\n    return verify_jwt(token)",
+};

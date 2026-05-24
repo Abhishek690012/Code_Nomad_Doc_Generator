@@ -1,5 +1,9 @@
 # Python dependencies for Codewise backend
-Flask==3.0.3
-Flask-Cors==4.0.1
-python-dotenv==1.0.1
-requests==2.32.3
+flask
+flask-cors
+requests
+python-dotenv
+sentence-transformers
+faiss-cpu
+groq
+numpy
