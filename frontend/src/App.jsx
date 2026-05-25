@@ -5,6 +5,17 @@ import DocView from './components/DocView';
 import QueryPanel from './components/QueryPanel';
 import './styles/index.css';
 
+// Centralised API base URL — falls back to same-origin if VITE_API_URL is not
+// configured (e.g. missing from Netlify environment variables).
+const API_BASE = import.meta.env.VITE_API_URL || '';
+
+if (!import.meta.env.VITE_API_URL) {
+  console.warn(
+    '[Codewise] VITE_API_URL is not set. API calls will use same-origin. ' +
+    'Set this variable in your hosting provider\'s environment settings.'
+  );
+}
+
 function App() {
   const [docs, setDocs] = useState({});
   const [selectedFile, setSelectedFile] = useState(null);
@@ -17,7 +28,7 @@ function App() {
 
   // Fetch initial docs on mount
   useEffect(() => {
-    fetch('http://localhost:5000/docs')
+    fetch(API_BASE + '/docs')
       .then((res) => res.json())
       .then((data) => {
         if (data && Object.keys(data).length > 0) {
@@ -32,7 +43,7 @@ function App() {
   async function handleTrigger() {
     setIsTriggering(true);
     try {
-      const response = await fetch('http://localhost:5000/trigger', {
+      const response = await fetch(API_BASE + '/trigger', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -58,7 +69,7 @@ function App() {
     setIsQuerying(true);
     setQueryResponse(null);
     try {
-      const response = await fetch('http://localhost:5000/query', {
+      const response = await fetch(API_BASE + '/query', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

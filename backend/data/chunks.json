@@ -1,0 +1,342 @@
+[
+  {
+    "chunk_text": "File: README\nLanguage: None\nSummary: A simple README file containing a 'Hello World!' message, likely serving as a basic introduction or placeholder in a project.",
+    "source_file": "README",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: src/pipeline/overfit_test.py\nLanguage: python\nSummary: This script performs an overfitting test for a machine learning model by training it on a small dataset and checking if it can achieve 100% accuracy. It generates synthetic data, preprocesses it, and trains a FullModel instance with a custom configuration to test its ability to overfit.",
+    "source_file": "src/pipeline/overfit_test.py",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: src/pipeline/overfit_test.py\nFunction/Class: main\nDescription: The main function that orchestrates the overfitting test. It loads the configuration, generates synthetic data, preprocesses it, creates a model, and trains it with a custom configuration.\nParameters: None\nReturns: None",
+    "source_file": "src/pipeline/overfit_test.py",
+    "function_name": "main"
+  },
+  {
+    "chunk_text": "File: library/src/main/res/values-mdpi/dimens.xml\nLanguage: xml\nSummary: This XML file defines dimension values for user interface components in an Android application, specifically for medium-density (mdpi) screens.",
+    "source_file": "library/src/main/res/values-mdpi/dimens.xml",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: library/src/main/res/drawable/background_card.xml\nLanguage: xml\nSummary: This XML file defines a background shape for a card view, providing a white background with rounded corners.",
+    "source_file": "library/src/main/res/drawable/background_card.xml",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: app/.gitignore\nLanguage: None\nSummary: This .gitignore file specifies files or directories that Git should ignore in the app directory. Its main purpose is to prevent unnecessary files from being committed to the Git repository, such as build artifacts. By ignoring these files, the repository remains clean and focused on source code.",
+    "source_file": "app/.gitignore",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java\nLanguage: java\nSummary: The BatAdapter class is a custom RecyclerView adapter designed to display a list of items with checkboxes and dividers. It handles item clicks, checkbox state changes, and animations for adding, moving, or removing items.",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java\nFunction/Class: BatAdapter\nDescription: Constructor for the BatAdapter class, initializing the adapter with a list of items and optional listeners for item interactions and animations.\nParameters: goals (List<BatModel>): list of items to display, listener (BatListener): listener for item interactions, animator (BatItemAnimator): animator for item animations\nReturns:",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java",
+    "function_name": "BatAdapter"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java\nFunction/Class: setRadioButtonColor\nDescription: Sets the color resource for the radio buttons in the adapter.\nParameters: drawable (int): color resource for the radio buttons\nReturns: BatAdapter: the adapter instance for chaining",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java",
+    "function_name": "setRadioButtonColor"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java\nFunction/Class: setDividerColor\nDescription: Sets the color resource for the dividers in the adapter and makes them visible.\nParameters: color (int): color resource for the dividers\nReturns: BatAdapter: the adapter instance for chaining",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java",
+    "function_name": "setDividerColor"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java\nFunction/Class: setOnOutsideClickListener\nDescription: Sets a listener for outside clicks on the adapter items.\nParameters: listener (OnOutsideClickedListener): listener for outside clicks\nReturns: BatAdapter: the adapter instance for chaining",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java",
+    "function_name": "setOnOutsideClickListener"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java\nFunction/Class: setTextColor\nDescription: Sets the color resource for the text in the adapter.\nParameters: color (int): color resource for the text\nReturns: BatAdapter: the adapter instance for chaining",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java",
+    "function_name": "setTextColor"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java\nFunction/Class: setTypeface\nDescription: Sets the typeface for the text in the adapter.\nParameters: typeface (Typeface): typeface for the text\nReturns: BatAdapter: the adapter instance for chaining",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java",
+    "function_name": "setTypeface"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java\nFunction/Class: setOnItemClickListener\nDescription: Sets a listener for item clicks in the adapter.\nParameters: listener (OnItemClickListener): listener for item clicks\nReturns: BatAdapter: the adapter instance for chaining",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java",
+    "function_name": "setOnItemClickListener"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java\nFunction/Class: onCreateViewHolder\nDescription: Creates a new ViewHolder instance for the adapter.\nParameters: parent (ViewGroup): parent view group, viewType (int): view type\nReturns: ViewHolder: the created ViewHolder instance",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java",
+    "function_name": "onCreateViewHolder"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java\nFunction/Class: onBindViewHolder\nDescription: Binds the data to the ViewHolder instance.\nParameters: holder (ViewHolder): ViewHolder instance, position (int): position of the item\nReturns:",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java",
+    "function_name": "onBindViewHolder"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java\nFunction/Class: getColor\nDescription: Gets the color resource from the context.\nParameters: context (Context): context, color (int): color resource\nReturns: int: the color value",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java",
+    "function_name": "getColor"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java\nFunction/Class: getItemCount\nDescription: Gets the number of items in the adapter.\nParameters: \nReturns: int: the number of items",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java",
+    "function_name": "getItemCount"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java\nFunction/Class: onCheckedChanged\nDescription: Handles the checkbox state change event.\nParameters: buttonView (CompoundButton): checkbox view, isChecked (boolean): checked state\nReturns:",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java",
+    "function_name": "onCheckedChanged"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java\nFunction/Class: setChecked\nDescription: Sets the checked state of the checkbox.\nParameters: button (CompoundButton): checkbox view, checked (boolean): checked state\nReturns:",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java",
+    "function_name": "setChecked"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java\nFunction/Class: notify\nDescription: Notifies the adapter about changes to the data.\nParameters: animationType (int): animation type, position (int): position of the item, to (int): target position\nReturns:",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java",
+    "function_name": "notify"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java\nFunction/Class: onAnimationStarted\nDescription: Handles the animation start event.\nParameters: \nReturns:",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java",
+    "function_name": "onAnimationStarted"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java\nFunction/Class: onAnimationFinished\nDescription: Handles the animation finish event.\nParameters: \nReturns:",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java",
+    "function_name": "onAnimationFinished"
+  },
+  {
+    "chunk_text": "File: library/src/main/res/anim/increasing_anim.xml\nLanguage: xml\nSummary: This XML file defines an animation that scales a view from zero size to its original size over a duration of 300 milliseconds, creating an increasing effect.",
+    "source_file": "library/src/main/res/anim/increasing_anim.xml",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: library/src/main/res/layout/bat_add_view.xml\nLanguage: xml\nSummary: This XML layout file defines a FrameLayout for displaying two AppCompatImageViews, representing vertical and horizontal cursors, in the center of the view.",
+    "source_file": "library/src/main/res/layout/bat_add_view.xml",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: library/src/main/res/drawable/header_background_rounded.xml\nLanguage: xml\nSummary: This XML file defines a rounded rectangle shape used as a background for headers, providing a visually appealing and consistent design element throughout the application.",
+    "source_file": "library/src/main/res/drawable/header_background_rounded.xml",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: app/src/main/AndroidManifest.xml\nLanguage: xml\nSummary: This is the main AndroidManifest.xml file, which serves as the central configuration file for an Android application. It declares the application's components, such as activities, and defines the application's metadata, such as its icon and label.",
+    "source_file": "app/src/main/AndroidManifest.xml",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: app/src/main/java/com/yalantis/beamazingtoday/sample/Goal.java\nLanguage: java\nSummary: This Java class represents a Goal object, implementing the BatModel interface. It provides properties for goal name and checked status, along with getter and setter methods for these properties.",
+    "source_file": "app/src/main/java/com/yalantis/beamazingtoday/sample/Goal.java",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: app/src/main/java/com/yalantis/beamazingtoday/sample/Goal.java\nFunction/Class: Goal\nDescription: Constructor to create a new Goal object with the given name.\nParameters: name (String): the name of the goal\nReturns: None",
+    "source_file": "app/src/main/java/com/yalantis/beamazingtoday/sample/Goal.java",
+    "function_name": "Goal"
+  },
+  {
+    "chunk_text": "File: app/src/main/java/com/yalantis/beamazingtoday/sample/Goal.java\nFunction/Class: getName\nDescription: Gets the name of the goal.\nParameters: None\nReturns: String: the name of the goal",
+    "source_file": "app/src/main/java/com/yalantis/beamazingtoday/sample/Goal.java",
+    "function_name": "getName"
+  },
+  {
+    "chunk_text": "File: app/src/main/java/com/yalantis/beamazingtoday/sample/Goal.java\nFunction/Class: setName\nDescription: Sets the name of the goal.\nParameters: name (String): the new name of the goal\nReturns: None",
+    "source_file": "app/src/main/java/com/yalantis/beamazingtoday/sample/Goal.java",
+    "function_name": "setName"
+  },
+  {
+    "chunk_text": "File: app/src/main/java/com/yalantis/beamazingtoday/sample/Goal.java\nFunction/Class: setChecked\nDescription: Sets the checked status of the goal.\nParameters: checked (boolean): the new checked status of the goal\nReturns: None",
+    "source_file": "app/src/main/java/com/yalantis/beamazingtoday/sample/Goal.java",
+    "function_name": "setChecked"
+  },
+  {
+    "chunk_text": "File: app/src/main/java/com/yalantis/beamazingtoday/sample/Goal.java\nFunction/Class: isChecked\nDescription: Checks if the goal is checked.\nParameters: None\nReturns: boolean: true if the goal is checked, false otherwise",
+    "source_file": "app/src/main/java/com/yalantis/beamazingtoday/sample/Goal.java",
+    "function_name": "isChecked"
+  },
+  {
+    "chunk_text": "File: app/src/main/java/com/yalantis/beamazingtoday/sample/Goal.java\nFunction/Class: getText\nDescription: Gets the text representation of the goal, which is the same as its name.\nParameters: None\nReturns: String: the text representation of the goal",
+    "source_file": "app/src/main/java/com/yalantis/beamazingtoday/sample/Goal.java",
+    "function_name": "getText"
+  },
+  {
+    "chunk_text": "File: gradle.properties\nLanguage: properties\nSummary: This file contains project-wide Gradle settings, allowing for configuration of the build environment, such as JVM arguments and parallel mode.",
+    "source_file": "gradle.properties",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: app/src/main/java/com/yalantis/beamazingtoday/sample/ExampleActivity.java\nLanguage: java\nSummary: This Java file represents an Android activity that demonstrates the usage of a custom recycler view with animation capabilities. It extends AppCompatActivity and implements several listener interfaces to handle user interactions and item manipulation.",
+    "source_file": "app/src/main/java/com/yalantis/beamazingtoday/sample/ExampleActivity.java",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: app/src/main/java/com/yalantis/beamazingtoday/sample/ExampleActivity.java\nFunction/Class: onCreate\nDescription: Initializes the activity, sets up the toolbar, and configures the recycler view with a custom adapter and animator.\nParameters: savedInstanceState (Bundle): the saved instance state\nReturns: void",
+    "source_file": "app/src/main/java/com/yalantis/beamazingtoday/sample/ExampleActivity.java",
+    "function_name": "onCreate"
+  },
+  {
+    "chunk_text": "File: app/src/main/java/com/yalantis/beamazingtoday/sample/ExampleActivity.java\nFunction/Class: add\nDescription: Adds a new item to the beginning of the list and notifies the adapter to animate the addition.\nParameters: string (String): the text to be added\nReturns: void",
+    "source_file": "app/src/main/java/com/yalantis/beamazingtoday/sample/ExampleActivity.java",
+    "function_name": "add"
+  },
+  {
+    "chunk_text": "File: app/src/main/java/com/yalantis/beamazingtoday/sample/ExampleActivity.java\nFunction/Class: delete\nDescription: Removes an item from the list at the specified position and notifies the adapter to animate the removal.\nParameters: position (int): the position of the item to be removed\nReturns: void",
+    "source_file": "app/src/main/java/com/yalantis/beamazingtoday/sample/ExampleActivity.java",
+    "function_name": "delete"
+  },
+  {
+    "chunk_text": "File: app/src/main/java/com/yalantis/beamazingtoday/sample/ExampleActivity.java\nFunction/Class: move\nDescription: Moves an item from one position to another in the list and notifies the adapter to animate the movement.\nParameters: from (int): the initial position, to (int): the target position\nReturns: void",
+    "source_file": "app/src/main/java/com/yalantis/beamazingtoday/sample/ExampleActivity.java",
+    "function_name": "move"
+  },
+  {
+    "chunk_text": "File: app/src/main/java/com/yalantis/beamazingtoday/sample/ExampleActivity.java\nFunction/Class: onClick\nDescription: Handles item clicks by displaying a toast message with the item's text.\nParameters: item (BatModel): the clicked item, position (int): the position of the item\nReturns: void",
+    "source_file": "app/src/main/java/com/yalantis/beamazingtoday/sample/ExampleActivity.java",
+    "function_name": "onClick"
+  },
+  {
+    "chunk_text": "File: app/src/main/java/com/yalantis/beamazingtoday/sample/ExampleActivity.java\nFunction/Class: onOutsideClicked\nDescription: Reverts the animation when the outside area of the recycler view is clicked.\nParameters: none\nReturns: void",
+    "source_file": "app/src/main/java/com/yalantis/beamazingtoday/sample/ExampleActivity.java",
+    "function_name": "onOutsideClicked"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/listeners/AnimationListener.java\nLanguage: java\nSummary: This interface defines a listener for animation events, allowing classes to react when specific animations start.",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/listeners/AnimationListener.java",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/listeners/AnimationListener.java\nFunction/Class: onIncreaseAnimationStarted\nDescription: Notifies the listener that an increase animation has started.\nParameters: None\nReturns: void",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/listeners/AnimationListener.java",
+    "function_name": "onIncreaseAnimationStarted"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/listeners/AnimationListener.java\nFunction/Class: onDecreaseAnimationStarted\nDescription: Notifies the listener that a decrease animation has started.\nParameters: None\nReturns: void",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/listeners/AnimationListener.java",
+    "function_name": "onDecreaseAnimationStarted"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/listeners/AnimationListener.java\nFunction/Class: onAddAnimationStarted\nDescription: Notifies the listener that an add animation has started.\nParameters: None\nReturns: void",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/listeners/AnimationListener.java",
+    "function_name": "onAddAnimationStarted"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/interfaces/BatModel.java\nLanguage: java\nSummary: The BatModel interface defines a contract for objects that need to provide a checked state and text, likely used in a list or other collection of items.",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/interfaces/BatModel.java",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/interfaces/BatModel.java\nFunction/Class: isChecked\nDescription: Checks if the model is currently checked.\nParameters: \nReturns: boolean: the checked state of the model",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/interfaces/BatModel.java",
+    "function_name": "isChecked"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/interfaces/BatModel.java\nFunction/Class: getText\nDescription: Gets the text associated with the model.\nParameters: \nReturns: String: the text of the model",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/interfaces/BatModel.java",
+    "function_name": "getText"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/interfaces/BatModel.java\nFunction/Class: setChecked\nDescription: Sets the checked state of the model.\nParameters: checked (boolean): the new checked state\nReturns: void",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/interfaces/BatModel.java",
+    "function_name": "setChecked"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/listeners/MoveAnimationListener.java\nLanguage: java\nSummary: This interface defines a listener for move animations, providing callbacks for when the animation starts and finishes.",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/listeners/MoveAnimationListener.java",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/listeners/MoveAnimationListener.java\nFunction/Class: onAnimationStarted\nDescription: Called when the move animation starts.\nParameters: None\nReturns: void",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/listeners/MoveAnimationListener.java",
+    "function_name": "onAnimationStarted"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/listeners/MoveAnimationListener.java\nFunction/Class: onAnimationFinished\nDescription: Called when the move animation finishes.\nParameters: None\nReturns: void",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/listeners/MoveAnimationListener.java",
+    "function_name": "onAnimationFinished"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/listeners/OnOutsideClickedListener.java\nLanguage: java\nSummary: This interface defines a listener for outside click events, allowing components to react when a click occurs outside their boundaries.",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/listeners/OnOutsideClickedListener.java",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/listeners/OnOutsideClickedListener.java\nFunction/Class: onOutsideClicked\nDescription: Notifies the listener that a click has occurred outside the component.\nParameters: None\nReturns: None",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/listeners/OnOutsideClickedListener.java",
+    "function_name": "onOutsideClicked"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java\nLanguage: java\nSummary: This utility class provides various animation methods for views, including showing, hiding, rotating, scaling, and moving. It simplifies the process of animating views in an Android application.",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java\nFunction/Class: show\nDescription: Makes a view visible by animating its alpha value to 1.\nParameters: view (View): the view to be shown\nReturns: void",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java",
+    "function_name": "show"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java\nFunction/Class: hide\nDescription: Hides a view by animating its alpha value to 0.\nParameters: view (View): the view to be hidden\nReturns: void",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java",
+    "function_name": "hide"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java\nFunction/Class: rotate\nDescription: Rotates a view by a specified angle.\nParameters: view (View): the view to be rotated, value (int): the rotation angle, endAction (Runnable): an optional action to be performed after the animation\nReturns: void",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java",
+    "function_name": "rotate"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java\nFunction/Class: showViews\nDescription: Makes multiple views visible by animating their alpha values to 1.\nParameters: views (View...): the views to be shown\nReturns: void",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java",
+    "function_name": "showViews"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java\nFunction/Class: hideViews\nDescription: Hides multiple views by animating their alpha values to 0.\nParameters: views (View...): the views to be hidden\nReturns: void",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java",
+    "function_name": "hideViews"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java\nFunction/Class: scaleXViews\nDescription: Scales multiple views horizontally by a specified factor.\nParameters: value (float): the scale factor, views (View...): the views to be scaled\nReturns: void",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java",
+    "function_name": "scaleXViews"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java\nFunction/Class: scaleX\nDescription: Scales a view horizontally by a specified factor.\nParameters: value (float): the scale factor, view (View): the view to be scaled\nReturns: void",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java",
+    "function_name": "scaleX"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java\nFunction/Class: moveX\nDescription: Moves a view horizontally by a specified distance.\nParameters: view (View): the view to be moved, value (float): the distance to move\nReturns: void",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java",
+    "function_name": "moveX"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java\nFunction/Class: moveX\nDescription: Moves a view horizontally by a specified distance and performs an action after the animation.\nParameters: view (View): the view to be moved, value (float): the distance to move, endAction (Runnable): the action to be performed after the animation\nReturns: void",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java",
+    "function_name": "moveX"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java\nFunction/Class: animateAlpha\nDescription: Animates the alpha value of a view to a specified value.\nParameters: view (View): the view to be animated, alpha (float): the target alpha value, endAction (Runnable): an optional action to be performed after the animation\nReturns: void",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java",
+    "function_name": "animateAlpha"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java\nFunction/Class: showKeyboard\nDescription: Shows the soft keyboard for a view.\nParameters: context (Context): the application context, view (View): the view for which the keyboard should be shown\nReturns: void",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java",
+    "function_name": "showKeyboard"
+  },
+  {
+    "chunk_text": "File: library/src/main/java/com/yalantis/beamazingtoday/Constant.java\nLanguage: java\nSummary: This Java class defines a constant for animation duration in milliseconds, providing a reusable value throughout the application.",
+    "source_file": "library/src/main/java/com/yalantis/beamazingtoday/Constant.java",
+    "function_name": "GLOBAL_SUMMARY"
+  }
+]

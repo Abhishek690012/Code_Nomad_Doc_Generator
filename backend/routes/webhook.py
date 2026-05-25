@@ -1,6 +1,7 @@
 import os
 import hmac
 import hashlib
+import threading
 from flask import Blueprint, request, jsonify
 
 from services.github_client import fetch_file_content
@@ -8,6 +9,45 @@ from services import doc_generator, index_store
 from models.doc_store import save_doc, get_all_docs
 
 webhook_bp = Blueprint("webhook_bp", __name__)
+
+def process_pipeline_background(repo_name, modified_files):
+    """
+    Background task that fetches the modified files, generates docs,
+    persists them, and rebuilds the FAISS/NumPy index.
+    """
+    print(f"[Background Task] Starting pipeline for repository: {repo_name}")
+    print(f"[Background Task] Files to process: {modified_files}")
+    
+    # Ensure Flask application context is active if any services/imports need it
+    from app import app
+    with app.app_context():
+        processed_files = []
+        for file_path in modified_files:
+            print(f"[Background Task] Processing file: {file_path}")
+            try:
+                content = fetch_file_content(repo_name, file_path)
+                if content:
+                    print(f"[Background Task] Generating docs for: {file_path}")
+                    doc = doc_generator.generate(file_path, content)
+                    print(f"[Background Task] Saving doc for: {file_path}")
+                    save_doc(file_path, doc)
+                    processed_files.append(file_path)
+                    print(f"[Background Task] Finished processing: {file_path}")
+                else:
+                    print(f"[Background Task] Warning: Empty content for {file_path}")
+            except Exception as e:
+                print(f"[Background Task] Error processing {file_path}: {e}")
+
+        # Rebuild index
+        print("[Background Task] Rebuilding search index...")
+        try:
+            all_docs = get_all_docs()
+            index_store.add_docs(all_docs)
+            print("[Background Task] Search index rebuilt successfully.")
+        except Exception as e:
+            print(f"[Background Task] Error rebuilding index: {e}")
+
+    print(f"[Background Task] Completed pipeline for repository: {repo_name}")
 
 @webhook_bp.route("/webhook", methods=["POST"])
 def webhook():
@@ -52,23 +92,17 @@ def webhook():
                 for file_path in commit.get("modified", []):
                     files_to_process.add(file_path)
 
-            processed_files = []
-            for file_path in files_to_process:
-                # Core pipeline: fetch content, generate docs, and save
-                content = fetch_file_content(repo_full_name, file_path)
-                if content:
-                    doc = doc_generator.generate(file_path, content)
-                    save_doc(file_path, doc)
-                    processed_files.append(file_path)
-
-            # Rebuild index
-            all_docs = get_all_docs()
-            index_store.add_docs(all_docs)
-
-            return jsonify({
-                "status": "success",
-                "files_processed": processed_files
-            }), 200
+            modified_files = list(files_to_process)
+            
+            if modified_files:
+                # Start the heavy lifting in a background thread
+                threading.Thread(
+                    target=process_pipeline_background, 
+                    args=(repo_full_name, modified_files)
+                ).start()
+                return jsonify({"status": "Processing started in background"}), 200
+            else:
+                return jsonify({"status": "No files to process"}), 200
 
         return jsonify({"message": f"Event {github_event} ignored"}), 200
 

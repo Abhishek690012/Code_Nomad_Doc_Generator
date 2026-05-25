@@ -8,6 +8,12 @@ Responsibilities:
   - Initialize the Flask app and enable CORS globally via flask-cors.
   - Register all Flask blueprints (health, docs, query, trigger).
   - Run the development server on port 5000 when executed directly.
+
+Production Usage (Render / Gunicorn):
+  The ``app`` object is exposed at module level so that a WSGI server
+  can import it directly::
+
+      gunicorn app:app
 """
 
 from flask import Flask, jsonify

@@ -1,0 +1,400 @@
+{
+  "README": {
+    "summary": "A simple README file containing a 'Hello World!' message, likely serving as a basic introduction or placeholder in a project.",
+    "language": "None",
+    "functions": []
+  },
+  "src/pipeline/overfit_test.py": {
+    "summary": "This script performs an overfitting test for a machine learning model by training it on a small dataset and checking if it can achieve 100% accuracy. It generates synthetic data, preprocesses it, and trains a FullModel instance with a custom configuration to test its ability to overfit.",
+    "language": "python",
+    "functions": [
+      {
+        "name": "main",
+        "description": "The main function that orchestrates the overfitting test. It loads the configuration, generates synthetic data, preprocesses it, creates a model, and trains it with a custom configuration.",
+        "params": "None",
+        "returns": "None"
+      }
+    ]
+  },
+  "library/src/main/res/values-mdpi/dimens.xml": {
+    "summary": "This XML file defines dimension values for user interface components in an Android application, specifically for medium-density (mdpi) screens.",
+    "language": "xml",
+    "functions": []
+  },
+  "library/src/main/res/drawable/background_card.xml": {
+    "summary": "This XML file defines a background shape for a card view, providing a white background with rounded corners.",
+    "language": "xml",
+    "functions": []
+  },
+  "app/.gitignore": {
+    "summary": "This .gitignore file specifies files or directories that Git should ignore in the app directory. Its main purpose is to prevent unnecessary files from being committed to the Git repository, such as build artifacts. By ignoring these files, the repository remains clean and focused on source code.",
+    "language": "None",
+    "functions": []
+  },
+  "library/src/main/java/com/yalantis/beamazingtoday/ui/adapter/BatAdapter.java": {
+    "summary": "The BatAdapter class is a custom RecyclerView adapter designed to display a list of items with checkboxes and dividers. It handles item clicks, checkbox state changes, and animations for adding, moving, or removing items.",
+    "language": "java",
+    "functions": [
+      {
+        "name": "BatAdapter",
+        "description": "Constructor for the BatAdapter class, initializing the adapter with a list of items and optional listeners for item interactions and animations.",
+        "params": "goals (List<BatModel>): list of items to display, listener (BatListener): listener for item interactions, animator (BatItemAnimator): animator for item animations",
+        "returns": ""
+      },
+      {
+        "name": "setRadioButtonColor",
+        "description": "Sets the color resource for the radio buttons in the adapter.",
+        "params": "drawable (int): color resource for the radio buttons",
+        "returns": "BatAdapter: the adapter instance for chaining"
+      },
+      {
+        "name": "setDividerColor",
+        "description": "Sets the color resource for the dividers in the adapter and makes them visible.",
+        "params": "color (int): color resource for the dividers",
+        "returns": "BatAdapter: the adapter instance for chaining"
+      },
+      {
+        "name": "setOnOutsideClickListener",
+        "description": "Sets a listener for outside clicks on the adapter items.",
+        "params": "listener (OnOutsideClickedListener): listener for outside clicks",
+        "returns": "BatAdapter: the adapter instance for chaining"
+      },
+      {
+        "name": "setTextColor",
+        "description": "Sets the color resource for the text in the adapter.",
+        "params": "color (int): color resource for the text",
+        "returns": "BatAdapter: the adapter instance for chaining"
+      },
+      {
+        "name": "setTypeface",
+        "description": "Sets the typeface for the text in the adapter.",
+        "params": "typeface (Typeface): typeface for the text",
+        "returns": "BatAdapter: the adapter instance for chaining"
+      },
+      {
+        "name": "setOnItemClickListener",
+        "description": "Sets a listener for item clicks in the adapter.",
+        "params": "listener (OnItemClickListener): listener for item clicks",
+        "returns": "BatAdapter: the adapter instance for chaining"
+      },
+      {
+        "name": "onCreateViewHolder",
+        "description": "Creates a new ViewHolder instance for the adapter.",
+        "params": "parent (ViewGroup): parent view group, viewType (int): view type",
+        "returns": "ViewHolder: the created ViewHolder instance"
+      },
+      {
+        "name": "onBindViewHolder",
+        "description": "Binds the data to the ViewHolder instance.",
+        "params": "holder (ViewHolder): ViewHolder instance, position (int): position of the item",
+        "returns": ""
+      },
+      {
+        "name": "getColor",
+        "description": "Gets the color resource from the context.",
+        "params": "context (Context): context, color (int): color resource",
+        "returns": "int: the color value"
+      },
+      {
+        "name": "getItemCount",
+        "description": "Gets the number of items in the adapter.",
+        "params": "",
+        "returns": "int: the number of items"
+      },
+      {
+        "name": "onCheckedChanged",
+        "description": "Handles the checkbox state change event.",
+        "params": "buttonView (CompoundButton): checkbox view, isChecked (boolean): checked state",
+        "returns": ""
+      },
+      {
+        "name": "setChecked",
+        "description": "Sets the checked state of the checkbox.",
+        "params": "button (CompoundButton): checkbox view, checked (boolean): checked state",
+        "returns": ""
+      },
+      {
+        "name": "notify",
+        "description": "Notifies the adapter about changes to the data.",
+        "params": "animationType (int): animation type, position (int): position of the item, to (int): target position",
+        "returns": ""
+      },
+      {
+        "name": "onAnimationStarted",
+        "description": "Handles the animation start event.",
+        "params": "",
+        "returns": ""
+      },
+      {
+        "name": "onAnimationFinished",
+        "description": "Handles the animation finish event.",
+        "params": "",
+        "returns": ""
+      }
+    ]
+  },
+  "library/src/main/res/anim/increasing_anim.xml": {
+    "summary": "This XML file defines an animation that scales a view from zero size to its original size over a duration of 300 milliseconds, creating an increasing effect.",
+    "language": "xml",
+    "functions": []
+  },
+  "library/src/main/res/layout/bat_add_view.xml": {
+    "summary": "This XML layout file defines a FrameLayout for displaying two AppCompatImageViews, representing vertical and horizontal cursors, in the center of the view.",
+    "language": "xml",
+    "functions": []
+  },
+  "library/src/main/res/drawable/header_background_rounded.xml": {
+    "summary": "This XML file defines a rounded rectangle shape used as a background for headers, providing a visually appealing and consistent design element throughout the application.",
+    "language": "xml",
+    "functions": []
+  },
+  "app/src/main/AndroidManifest.xml": {
+    "summary": "This is the main AndroidManifest.xml file, which serves as the central configuration file for an Android application. It declares the application's components, such as activities, and defines the application's metadata, such as its icon and label.",
+    "language": "xml",
+    "functions": []
+  },
+  "app/src/main/java/com/yalantis/beamazingtoday/sample/Goal.java": {
+    "summary": "This Java class represents a Goal object, implementing the BatModel interface. It provides properties for goal name and checked status, along with getter and setter methods for these properties.",
+    "language": "java",
+    "functions": [
+      {
+        "name": "Goal",
+        "description": "Constructor to create a new Goal object with the given name.",
+        "params": "name (String): the name of the goal",
+        "returns": "None"
+      },
+      {
+        "name": "getName",
+        "description": "Gets the name of the goal.",
+        "params": "None",
+        "returns": "String: the name of the goal"
+      },
+      {
+        "name": "setName",
+        "description": "Sets the name of the goal.",
+        "params": "name (String): the new name of the goal",
+        "returns": "None"
+      },
+      {
+        "name": "setChecked",
+        "description": "Sets the checked status of the goal.",
+        "params": "checked (boolean): the new checked status of the goal",
+        "returns": "None"
+      },
+      {
+        "name": "isChecked",
+        "description": "Checks if the goal is checked.",
+        "params": "None",
+        "returns": "boolean: true if the goal is checked, false otherwise"
+      },
+      {
+        "name": "getText",
+        "description": "Gets the text representation of the goal, which is the same as its name.",
+        "params": "None",
+        "returns": "String: the text representation of the goal"
+      }
+    ]
+  },
+  "gradle.properties": {
+    "summary": "This file contains project-wide Gradle settings, allowing for configuration of the build environment, such as JVM arguments and parallel mode.",
+    "language": "properties",
+    "functions": []
+  },
+  "app/src/main/java/com/yalantis/beamazingtoday/sample/ExampleActivity.java": {
+    "summary": "This Java file represents an Android activity that demonstrates the usage of a custom recycler view with animation capabilities. It extends AppCompatActivity and implements several listener interfaces to handle user interactions and item manipulation.",
+    "language": "java",
+    "functions": [
+      {
+        "name": "onCreate",
+        "description": "Initializes the activity, sets up the toolbar, and configures the recycler view with a custom adapter and animator.",
+        "params": "savedInstanceState (Bundle): the saved instance state",
+        "returns": "void"
+      },
+      {
+        "name": "add",
+        "description": "Adds a new item to the beginning of the list and notifies the adapter to animate the addition.",
+        "params": "string (String): the text to be added",
+        "returns": "void"
+      },
+      {
+        "name": "delete",
+        "description": "Removes an item from the list at the specified position and notifies the adapter to animate the removal.",
+        "params": "position (int): the position of the item to be removed",
+        "returns": "void"
+      },
+      {
+        "name": "move",
+        "description": "Moves an item from one position to another in the list and notifies the adapter to animate the movement.",
+        "params": "from (int): the initial position, to (int): the target position",
+        "returns": "void"
+      },
+      {
+        "name": "onClick",
+        "description": "Handles item clicks by displaying a toast message with the item's text.",
+        "params": "item (BatModel): the clicked item, position (int): the position of the item",
+        "returns": "void"
+      },
+      {
+        "name": "onOutsideClicked",
+        "description": "Reverts the animation when the outside area of the recycler view is clicked.",
+        "params": "none",
+        "returns": "void"
+      }
+    ]
+  },
+  "library/src/main/java/com/yalantis/beamazingtoday/listeners/AnimationListener.java": {
+    "summary": "This interface defines a listener for animation events, allowing classes to react when specific animations start.",
+    "language": "java",
+    "functions": [
+      {
+        "name": "onIncreaseAnimationStarted",
+        "description": "Notifies the listener that an increase animation has started.",
+        "params": "None",
+        "returns": "void"
+      },
+      {
+        "name": "onDecreaseAnimationStarted",
+        "description": "Notifies the listener that a decrease animation has started.",
+        "params": "None",
+        "returns": "void"
+      },
+      {
+        "name": "onAddAnimationStarted",
+        "description": "Notifies the listener that an add animation has started.",
+        "params": "None",
+        "returns": "void"
+      }
+    ]
+  },
+  "library/src/main/java/com/yalantis/beamazingtoday/interfaces/BatModel.java": {
+    "summary": "The BatModel interface defines a contract for objects that need to provide a checked state and text, likely used in a list or other collection of items.",
+    "language": "java",
+    "functions": [
+      {
+        "name": "isChecked",
+        "description": "Checks if the model is currently checked.",
+        "params": "",
+        "returns": "boolean: the checked state of the model"
+      },
+      {
+        "name": "getText",
+        "description": "Gets the text associated with the model.",
+        "params": "",
+        "returns": "String: the text of the model"
+      },
+      {
+        "name": "setChecked",
+        "description": "Sets the checked state of the model.",
+        "params": "checked (boolean): the new checked state",
+        "returns": "void"
+      }
+    ]
+  },
+  "library/src/main/java/com/yalantis/beamazingtoday/listeners/MoveAnimationListener.java": {
+    "summary": "This interface defines a listener for move animations, providing callbacks for when the animation starts and finishes.",
+    "language": "java",
+    "functions": [
+      {
+        "name": "onAnimationStarted",
+        "description": "Called when the move animation starts.",
+        "params": "None",
+        "returns": "void"
+      },
+      {
+        "name": "onAnimationFinished",
+        "description": "Called when the move animation finishes.",
+        "params": "None",
+        "returns": "void"
+      }
+    ]
+  },
+  "library/src/main/java/com/yalantis/beamazingtoday/listeners/OnOutsideClickedListener.java": {
+    "summary": "This interface defines a listener for outside click events, allowing components to react when a click occurs outside their boundaries.",
+    "language": "java",
+    "functions": [
+      {
+        "name": "onOutsideClicked",
+        "description": "Notifies the listener that a click has occurred outside the component.",
+        "params": "None",
+        "returns": "None"
+      }
+    ]
+  },
+  "library/src/main/java/com/yalantis/beamazingtoday/util/AnimationUtil.java": {
+    "summary": "This utility class provides various animation methods for views, including showing, hiding, rotating, scaling, and moving. It simplifies the process of animating views in an Android application.",
+    "language": "java",
+    "functions": [
+      {
+        "name": "show",
+        "description": "Makes a view visible by animating its alpha value to 1.",
+        "params": "view (View): the view to be shown",
+        "returns": "void"
+      },
+      {
+        "name": "hide",
+        "description": "Hides a view by animating its alpha value to 0.",
+        "params": "view (View): the view to be hidden",
+        "returns": "void"
+      },
+      {
+        "name": "rotate",
+        "description": "Rotates a view by a specified angle.",
+        "params": "view (View): the view to be rotated, value (int): the rotation angle, endAction (Runnable): an optional action to be performed after the animation",
+        "returns": "void"
+      },
+      {
+        "name": "showViews",
+        "description": "Makes multiple views visible by animating their alpha values to 1.",
+        "params": "views (View...): the views to be shown",
+        "returns": "void"
+      },
+      {
+        "name": "hideViews",
+        "description": "Hides multiple views by animating their alpha values to 0.",
+        "params": "views (View...): the views to be hidden",
+        "returns": "void"
+      },
+      {
+        "name": "scaleXViews",
+        "description": "Scales multiple views horizontally by a specified factor.",
+        "params": "value (float): the scale factor, views (View...): the views to be scaled",
+        "returns": "void"
+      },
+      {
+        "name": "scaleX",
+        "description": "Scales a view horizontally by a specified factor.",
+        "params": "value (float): the scale factor, view (View): the view to be scaled",
+        "returns": "void"
+      },
+      {
+        "name": "moveX",
+        "description": "Moves a view horizontally by a specified distance.",
+        "params": "view (View): the view to be moved, value (float): the distance to move",
+        "returns": "void"
+      },
+      {
+        "name": "moveX",
+        "description": "Moves a view horizontally by a specified distance and performs an action after the animation.",
+        "params": "view (View): the view to be moved, value (float): the distance to move, endAction (Runnable): the action to be performed after the animation",
+        "returns": "void"
+      },
+      {
+        "name": "animateAlpha",
+        "description": "Animates the alpha value of a view to a specified value.",
+        "params": "view (View): the view to be animated, alpha (float): the target alpha value, endAction (Runnable): an optional action to be performed after the animation",
+        "returns": "void"
+      },
+      {
+        "name": "showKeyboard",
+        "description": "Shows the soft keyboard for a view.",
+        "params": "context (Context): the application context, view (View): the view for which the keyboard should be shown",
+        "returns": "void"
+      }
+    ]
+  },
+  "library/src/main/java/com/yalantis/beamazingtoday/Constant.java": {
+    "summary": "This Java class defines a constant for animation duration in milliseconds, providing a reusable value throughout the application.",
+    "language": "java",
+    "functions": []
+  }
+}

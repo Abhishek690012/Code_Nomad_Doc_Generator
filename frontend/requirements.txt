@@ -1,0 +1,11 @@
+# ─────────────────────────────────────────────────────────────
+# Codewise Frontend — Development & Automation Requirements
+# ─────────────────────────────────────────────────────────────
+
+# Note: The React / Vite frontend runs on Node.js and uses package.json 
+# for dependency management. However, if you are running Python helper
+# scripts or deployment checks locally, these are the dependencies:
+
+# Python environment settings & helper checks
+python-dotenv
+requests
