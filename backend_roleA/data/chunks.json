@@ -1,0 +1,12 @@
+[
+  {
+    "chunk_text": "File: auth.py\nLanguage: python\nSummary: This module handles authentication by verifying JWT tokens and managing user sessions. It provides a function to verify the signature of incoming JWT tokens and a class to manage active user sessions.",
+    "source_file": "auth.py",
+    "function_name": "GLOBAL_SUMMARY"
+  },
+  {
+    "chunk_text": "File: auth.py\nFunction/Class: verify_token\nDescription: Verifies the signature of the incoming JWT token and returns user identity claims if valid.\nParameters: token (str): a base64 encoded JWT string\nReturns: dict: containing user identity claims if the token is valid",
+    "source_file": "auth.py",
+    "function_name": "verify_token"
+  }
+]
